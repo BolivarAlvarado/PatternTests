@@ -1,6 +1,6 @@
 package Abstract_Factory_Y_Builder.Vuelo;
 
-class VueloEconomico implements Vuelo {
+class VueloEconomico extends Vuelo {
     private String horario;
     private Aeronave aeronave;
 

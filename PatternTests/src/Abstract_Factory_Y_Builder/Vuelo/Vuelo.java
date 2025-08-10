@@ -1,6 +1,8 @@
 package Abstract_Factory_Y_Builder.Vuelo;
 
-interface Vuelo {
-    void mostrarDetalles();
+public abstract class Vuelo {
+    protected EstadoVuelo estado;
+    
+    public abstract void mostrarDetalles();
 }
 

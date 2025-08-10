@@ -6,7 +6,7 @@ public abstract class Vehiculo {
     protected String color;
     protected String horario;
     protected String extra;
-
+    protected EstadoVehiculo estado;
     public abstract void mostrarInfo();
 
     public void setProveedor(String proveedor) { this.proveedor = proveedor; }

@@ -5,4 +5,5 @@ interface VueloBuilder {
     void configurarAsientos();
     void configurarComida();
     Aeronave getResultado();
+    boolean verificarDisponibilidad();
 }

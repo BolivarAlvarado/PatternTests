@@ -2,7 +2,7 @@ package Abstract_Factory_Y_Builder.Vuelo;
 
 class BuilderEconomico implements VueloBuilder {
     private Aeronave aeronave = new Aeronave();
-
+    private boolean disponibilidad;
     @Override
     public void setProveedor(String proveedor) { aeronave.setProveedor(proveedor); }
     @Override
@@ -11,4 +11,6 @@ class BuilderEconomico implements VueloBuilder {
     public void configurarComida() { aeronave.setServicioComida(false); }
     @Override
     public Aeronave getResultado() { return aeronave; }
+    @Override 
+    public boolean verificarDisponibilidad(){return disponibilidad;}
 }
