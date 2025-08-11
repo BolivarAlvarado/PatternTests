@@ -15,4 +15,7 @@ public class Administrador {
         if (p == null) return false;
         return p.aplicar(reserva);
     }
+    public Politica getPolitica(String clave) {
+    return politicas.get(clave);
+    }
 }
