@@ -1,10 +1,10 @@
 package Abstract_Factory_Y_Builder.Vehiculo;
 
-public class VehiculoBaseBuilder implements VehiculoBuilder {
-    private Vehiculo vehiculo;
+class VehiculoSuvBuilder implements VehiculoBuilder {
+    private VehiculoSuv vehiculo;
 
-    public VehiculoBaseBuilder(VehiculoFactory factory) {
-        this.vehiculo = factory.crearVehiculo(); // Aquí usa Abstract Factory
+    public VehiculoSuvBuilder() {
+        this.vehiculo = new VehiculoSuv();
     }
 
     @Override
@@ -20,14 +20,20 @@ public class VehiculoBaseBuilder implements VehiculoBuilder {
     }
 
     @Override
-    public VehiculoBuilder setHorario(String horario) {
-        vehiculo.setHorario(horario);
+    public VehiculoBuilder setTipo(String tipo) {
+        vehiculo.tipo = tipo;
         return this;
     }
 
     @Override
-    public VehiculoBuilder setExtras(String extras) {
-        vehiculo.setExtra(extras);
+    public VehiculoBuilder setModelo(String modelo) {
+        vehiculo.modelo = modelo;
+        return this;
+    }
+
+    @Override
+    public VehiculoBuilder setEstado(EstadoVehiculo estado) {
+        vehiculo.estado = estado;
         return this;
     }
 
@@ -36,3 +42,5 @@ public class VehiculoBaseBuilder implements VehiculoBuilder {
         return vehiculo;
     }
 }
+
+

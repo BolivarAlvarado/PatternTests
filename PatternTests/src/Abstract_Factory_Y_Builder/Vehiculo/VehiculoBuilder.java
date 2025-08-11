@@ -1,11 +1,11 @@
 package Abstract_Factory_Y_Builder.Vehiculo;
 
-public interface VehiculoBuilder {
+interface VehiculoBuilder {
+    
     VehiculoBuilder setProveedor(String proveedor);
     VehiculoBuilder setColor(String color);
-    VehiculoBuilder setHorario(String horario);
-    VehiculoBuilder setExtras(String extras);
+    VehiculoBuilder setTipo(String tipo);
+    VehiculoBuilder setModelo(String modelo);
+    VehiculoBuilder setEstado(EstadoVehiculo estado);
     Vehiculo build();
 }
-
-

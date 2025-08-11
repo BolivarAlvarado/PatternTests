@@ -5,11 +5,14 @@ public class VehiculoLujo extends Vehiculo {
 
     @Override
     public void mostrarInfo() {
-        System.out.println("Vehículo: " + tipo + 
-            " | Proveedor: " + proveedor + 
-            " | Color: " + color +
-            " | Horario: " + horario +
-            " | Extra: " + extra);
+        System.out.println("=== Vehículo Económico ===");
+        System.out.println("ID: " + idVehiculo);
+        System.out.println("Tipo: " + tipo);
+        System.out.println("Proveedor: " + proveedor);
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Color: " + color);
+        System.out.println("Estado: " + estado);
+        System.out.println("==========================\n");
     }
 }
 

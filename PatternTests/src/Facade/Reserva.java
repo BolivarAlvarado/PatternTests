@@ -6,13 +6,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Reserva implements ReservaInterface {
-    private int idReserva;
+    private String idReserva;
     private Usuario usuario;
     private double precioBase;
     private String descripcion;
     private List<ObservadorReserva> observadores = new ArrayList<>();
 
-    public Reserva(int idReserva, Usuario usuario, double precioBase, String descripcion) {
+    public Reserva(String idReserva, Usuario usuario, double precioBase, String descripcion) {
         this.idReserva = idReserva;
         this.usuario = usuario;
         this.precioBase = precioBase;
@@ -54,7 +54,7 @@ public class Reserva implements ReservaInterface {
     }
 
     // getters
-    public int getIdReserva() { return idReserva; }
+    public String getIdReserva() { return idReserva; }
     public Usuario getUsuario() { return usuario; }
     public double getPrecioBase() { return precioBase; }
 }
